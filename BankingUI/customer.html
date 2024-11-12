@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Banking Options</title>
+    <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Vivid Bank</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="#" onclick="openForm('login-form')">Login</a></li> -->
+            <li><a href="#" onclick="openForm('register-form')">Profile</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+   <h1> Vivid bank</h1>
+   <h2> Clear , Colourful and dependable </h2>
+
+
+   <!-- <div class="form-modal" id="login-form">
+    <div class="form-content">
+        <span class="close-btn" onclick="closeForm('login-form')">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div> -->
+
+<!-- Register Form Modal -->
+<div class="form-modal" id="register-form">
+    <div class="form-content">
+        <span class="close-btn" onclick="closeForm('register-form')">&times;</span>
+        <h2>Login/Register</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password-register">Password</label>
+            <input type="password" id="password-register" name="password-register" required>
+            <button type="submit">Login</button>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</div>
+
+   <div class="content-container">
+    <div class="text-container">
+<h2 style="font-size: 30px;">Banking Made Simple, Secure, and Personalized.</h2>
+<p style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to Vivid Bank, your partner in smarter banking.
+     Enjoy 24/7 access to your accounts, secure and seamless transactions, and tailored financial solutions. 
+     Your money is protected with advanced security measures, giving you peace of mind. 
+    Start managing your finances effortlessly today. Join a community that trusts us to grow together.</p>
+</div>
+<div class="image-container">
+    <img src="https://freepngimg.com/save/165654-banking-pic-digital-png-image-high-quality/888x448">
+</div>
+</div>
+
+
+   <!--customer options-->
+    <h3 style="font-size: 30px;">Customer Banking Options</h3>
+    <div class="card-container">
+        <div class="cards-container">
+            <div class="card1" onclick="window.location.href='transfer-money.html'">
+                <div class="card-content">
+                <h2>Transfer Money</h2>
+                <p>Send money to another account securely and easily.</p>
+            </div>
+        </div>
+            <div class="card2" onclick="window.location.href='create-account.html'">
+               
+                <div class="card-content">
+                <h2>Create an Account</h2>
+                <p>Open a new savings or checking account with us.</p>
+            </div></div>
+            <div class="card3" onclick="window.location.href='apply-loan.html'">
+                <div class="card-content">
+                <h2>Apply for Loan</h2>
+                <p>Get financial support for your needs with our loan services.</p>
+            </div></div>
+            <div class="card4" onclick="window.location.href='withdraw-money.html'">
+                <div class="card-content">
+                <h2>Withdraw Money</h2>
+                <p>Withdraw money from your account conveniently.</p>
+            </div></div>
+            <div class="card5" onclick="window.location.href='check-balance.html'">
+                <div class="card-content">
+                <h2>Check Bank Balance</h2>
+                <p>View your current bank balance anytime.</p>
+            </div></div>
+            <div class="card6" onclick="window.location.href='check-balance.html'">
+                <div class="card-content">
+                <h2>Trasaction History</h2>
+                <p>Check your trasaction history effortlessly</p>
+            </div></div>
+        </div>
+    </div>
+
+    <div class="content-container1">
+        <div class="image-container1">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/bank-website-under-maintenance-illustration-download-in-svg-png-gif-file-formats--logo-server-down-people-illustrations-4341090.png">
+        </div>
+        <div class="text-container1">
+    <h2 style="font-size: 30px;">Banking Made Simple, Secure, and Personalized.</h2>
+    <p style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to Vivid Bank, your partner in smarter banking.
+         Enjoy 24/7 access to your accounts, secure and seamless transactions, and tailored financial solutions. 
+         Your money is protected with advanced security measures, giving you peace of mind. 
+        Start managing your finances effortlessly today. Join a community that trusts us to grow together.</p>
+    </div>
+    </div>
+
+  <!--contact us-->
+
+    <h2 style="margin-left: 70px;">Still having any problem ?</h2>
+    <h3 style="margin-left: 100px;">Drop a message here , We will reach out to you soon &#10084;</h3>
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-12">
+                    <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="contactform">
+                        <h3 class="register-heading">Contact Us</h3>
+                        <div class="row register-form">
+                            <div class="col-md-12">
+                                <form method="post" autocomplete="off" name="google-sheet">
+                                    <div class="form-group">
+                                        <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="Message" class="form-control" placeholder="Type any message here *" value="" required=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-column footer-column-1">
+            <!-- <a href="#">Share Your Story</a>
+            <a href="#">Assessment</a>
+            <a href="#">Directory</a> -->
+            
+        </div>
+
+        <div class="footer-column footer-column-2">
+            <a href="#">Tools</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+        </div>
+
+        <!-- <div class="footer-column footer-column-3">
+            <form>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button type="submit">Login</button>
+            </form> -->
+        </div>
+
+        <p>© 2024 Vivid Bank</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

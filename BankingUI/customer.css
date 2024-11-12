@@ -1,0 +1,465 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding-top: 60px; /* To avoid content being hidden under the navbar */
+}
+
+/* General Navigation Bar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: #ddd;
+}
+
+/* Active Link Styling */
+.nav-links a.active {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    height: auto;
+    margin: 5px ;
+    padding: 20px;
+    border-radius: 0px;
+   /* border: solid 1px;*/
+}
+
+.text-container {
+    flex: 1;
+}
+
+.text-container h2,
+.text-container h3,
+.text-container p {
+    margin: 0 0 20px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.image-container img {
+    max-width: 100%;
+    height: 350px;
+    border-radius: 0px;
+}
+
+
+.form-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.form-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* customer options */
+.card1 {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/027/742/677/small/internet-banking-technology-concept-vector.jpg");
+    background-color: #fff;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width for each card */
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    flex: 1 1 auto; /* This allows the cards to grow and shrink as needed */
+    max-width: 300px;
+}
+.card1 h2 {
+    margin-bottom: 1rem;
+    color:#e9f1e9;
+}
+
+.card1 p {
+    color: #d6ebed;
+}
+
+.card1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card2 {
+    background-image: url("https://thumbs.dreamstime.com/b/digital-background-banking-online-vector-concept-digital-background-banking-online-vector-concept-eps-119477548.jpg");
+    background-size: cover;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width for each card */
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    flex: 1 1 auto; /* This allows the cards to grow and shrink as needed */
+    max-width: 300px;
+}
+
+.card2 h2 {
+    margin-bottom: 1rem;
+    color:#e9f1e9;
+}
+
+.card2 p {
+    color: #d6ebed;
+}
+
+.card2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card3 {
+    background-image: url("https://www.bruningbank.com/sites/default/files/styles/front_page/public/2024-10/banking.jpeg?itok=jotKVvlO");
+    background-size: cover;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width for each card */
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    flex: 1 1 auto; /* This allows the cards to grow and shrink as needed */
+    max-width: 300px;
+}
+.card3 h2 {
+    margin-bottom: 1rem;
+    color:#e9f1e9;
+}
+
+.card3 p {
+    color: #d6ebed;
+}
+
+.card3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card4 {
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-fresh-bank-card-machine-advertising-background-backgroundblue-backgroundmanmoneyhand-paintedatmsimplemachine-image_83842.jpg");
+    background-size: cover;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width for each card */
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    flex: 1 1 auto; /* This allows the cards to grow and shrink as needed */
+    max-width: 300px;
+}
+.card4 h2 {
+    margin-bottom: 1rem;
+    color: #e9f1e9;
+}
+
+.card4 p {
+    color: #d6ebed;
+}
+
+.card4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card5 {
+    background-image: url("https://media.istockphoto.com/id/1389355907/vector/online-banking-login-protection-the-concept-of-a-smart-wallet-with-an-application-for.jpg?s=612x612&w=0&k=20&c=1dpaw7sEyi1E_RYabb-iOMwb8SB7W3n3U6xa20LLAsE=");
+    background-size: cover;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width for each card */
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    flex: 1 1 auto; /* This allows the cards to grow and shrink as needed */
+    max-width: 300px;
+}
+.card5 h2 {
+    margin-bottom: 1rem;
+    color: #e9f1e9;
+}
+
+.card5 p {
+    color: #d6ebed;
+}
+
+.card5:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card6 {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/048/879/372/small/fintech-financial-technology-online-banking-and-crowdfunding-business-investment-banking-payment-technology-concept-closeup-finger-about-to-press-a-button-with-fintech-icon-illustration-vector.jpg");
+    background-size: cover;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width for each card */
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    flex: 1 1 auto; /* This allows the cards to grow and shrink as needed */
+    max-width: 300px;
+}
+ .card6 h2 {
+    margin-bottom: 1rem;
+    color: #e9f1e9;
+}
+
+.card6 p {
+    color: #d6ebed;
+} 
+
+.card6:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+} 
+
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px 30px; 
+    padding: 20px;
+}
+
+
+.content-container1 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    height: auto;
+    margin: 5px ;
+    padding: 70px;
+    border-radius: 0px;
+    
+}
+
+.text-container1 {
+    flex: 1;
+}
+
+.text-container1 h2,
+.text-container1 h3,
+.text-container1 p {
+    margin: 0 0 20px;
+}
+
+.image-container1 {
+    flex: 1;
+    display: flex;
+   /* justify-content: flex-end;*/
+   
+}
+
+
+.image-container1 img {
+    max-width: 100%;
+    height: 350px;
+    border-radius: 0px;
+}
+
+/* contact form */
+.contactform {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+.btnSubmit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnSubmit:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    margin-bottom: 10px; /* Add space between links */
+}
+
+footer form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    margin-top: 10px; /* Add some space between links and the form */
+}
+
+footer input {
+    padding: 8px;
+    margin-bottom: 5px; /* Add some space between inputs */
+}
+
+footer button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer p {
+    margin: 0; /* Remove default margin for the paragraph */
+    margin-top: 10px; /* Add some space between form and the copyright */
+}
+
+.footer-column {
+    width: 100%; /* Take full width of the container */
+    text-align: left; /* Align text in the first column to the left */
+    margin-bottom: 10px; /* Add some space between the columns */
+}
+
+.footer-column-1,
+.footer-column-2,
+.footer-column-3 {
+    width: calc(33.33% - 20px); /* Divide the width into three columns with some spacing */
+    margin-right: 20px; /* Add space between columns */
+}
+
+@media (max-width: 767px) {
+    .footer-column-1,
+    .footer-column-2,
+    .footer-column-3 {
+        width: 100%; /* Take full width on smaller screens */
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
+}
