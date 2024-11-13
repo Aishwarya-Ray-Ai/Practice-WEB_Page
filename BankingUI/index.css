@@ -14,16 +14,17 @@ body {
     padding-top: 60px; /* To avoid content being hidden under the navbar */
 }
 .bank-name {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+    font-family: 'Times New Roman', serif;
+    font-size: 70px;
     text-align: center;
     margin-top: 20px; /* Adjust the margin as needed */
 }
 
 .tagline{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     text-align: center;
+    color: #4a7beb;
     margin-top: 20px;
 }
 
@@ -145,9 +146,10 @@ button:hover {
 
 /* Modal Content */
 .modal-content {
-    background-color: #8dc2de;
+    background-color: #a9d4ea;
     border-radius: 8px;
     width: 400px;
+    height: 170px;
     padding: 20px;
     position: relative;
     text-align: center;

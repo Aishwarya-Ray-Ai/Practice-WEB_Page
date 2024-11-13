@@ -2,7 +2,7 @@
 window.onload = function() {
     setTimeout(function() {
         document.getElementById('welcomeModal').style.display = 'flex';
-    }, 5000); // 5 seconds
+    }, 2000); // 2 seconds
 };
 
 // Function to close the modal
