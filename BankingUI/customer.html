@@ -18,57 +18,75 @@
         </ul>
     </nav>
     
-   <h1> Vivid bank</h1>
-   <h2> Clear , Colourful and dependable </h2>
+    <h1 class="bank-name">Vivid Bank</h1>
+   <h2 class="tagline"> Clear , Colourful and dependable </h2>
 
 
-   <!-- <div class="form-modal" id="login-form">
+   <div class="form-modal" id="form-modal">
     <div class="form-content">
-        <span class="close-btn" onclick="closeForm('login-form')">&times;</span>
-        <h2>Login</h2>
-        <form>
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
-        </form>
-    </div>
-</div> -->
+        <span class="close-btn" onclick="closeForm()">&times;</span>
+        <!-- Login Form Content -->
+        <div id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username <span class="required-star">*</span></label>
+                <input type="text" id="username" name="username" required>
 
-<!-- Register Form Modal -->
-<div class="form-modal" id="register-form">
-    <div class="form-content">
-        <span class="close-btn" onclick="closeForm('register-form')">&times;</span>
-        <h2>Login/Register</h2>
-        <form>
-            <label for="name">Customer ID</label>
+                <label for="password">Password <span class="required-star">*</span></label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+                <button type="button" onclick="resetForm()">Reset</button>
+            </form>
+
+            <p>Are you a new user?</p>
+            <button onclick="showRegisterForm()">Register</button>
+        </div>
+
+        <!-- Register Form Content -->
+        <div id="register-section" style="display: none;">
+            <h2>Register</h2>
+            <form id="register-form">
+             <label for="name">Customer ID<span class="required-star">*</span></label>
             <input type="text" id="name" name="name" placeholder="Enter your ID" required>
-            <label for="name">First Name</label>
+            <label for="name">First Name<span class="required-star">*</span></label>
             <input type="text" id="name" name="name" placeholder="Enter your first name" required>
-            <label for="name">Last Name</label>
+            <label for="name">Last Name<span class="required-star">*</span></label>
             <input type="text" id="name" name="name" placeholder="Enter your last name" required>
-            <label for="email">Email</label>
+            <label for="email">Email<span class="required-star">*</span></label>
             <input type="email" id="email" name="email" placeholder="Enter your e-mail id" required>
-            <label for="name">PhoneNumber</label>
+            <label for="name">PhoneNumber<span class="required-star">*</span></label>
             <input type="text" id="name" name="name" placeholder="Enter your phone number" required>
-            <label for="email">Address</label>
+            <label for="email">Address<span class="required-star">*</span></label>
             <input type="email" id="email" name="email" placeholder="Enter your address" required>
-            <label for="password-register">Password</label>
+            <label for="password-register">Password<span class="required-star">*</span></label>
             <input type="password" id="password-register" name="password-register" placeholder="Enter the password" required>
-            <button type="submit">Login</button>
-            <button type="submit">Register</button>
-        </form>
+                <!-- <label for="name">Full Name <span class="required-star">*</span></label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email <span class="required-star">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password-register">Password <span class="required-star">*</span></label>
+                <input type="password" id="password-register" name="password-register" required> -->
+
+                <button type="submit">Register</button>
+                <button type="button" onclick="resetForm()">Reset</button>
+
+                <p>Already have an account?</p>
+                <button onclick="showLoginForm()">Login</button>
+            </form>
+        </div>
     </div>
 </div>
 
    <div class="content-container">
     <div class="text-container">
-<h2 style="font-size: 30px;">Banking Made Simple, Secure, and Personalized.</h2>
-<p style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to Vivid Bank, your partner in smarter banking.
+<h2 style="font-size: 29px; margin-top: 180px;margin-left: 40px;">Banking Made Simple, Secure, and Personalized.</h2>
+<!-- <p style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to Vivid Bank, your partner in smarter banking.
      Enjoy 24/7 access to your accounts, secure and seamless transactions, and tailored financial solutions. 
      Your money is protected with advanced security measures, giving you peace of mind. 
-    Start managing your finances effortlessly today. Join a community that trusts us to grow together.</p>
+    Start managing your finances effortlessly today. Join a community that trusts us to grow together.</p> -->
 </div>
 <div class="image-container">
     <img src="https://freepngimg.com/save/165654-banking-pic-digital-png-image-high-quality/888x448">
