@@ -1,9 +1,23 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #bdbde8;
     margin: 0;
     padding-top: 60px; /* To avoid content being hidden under the navbar */
+}
+
+.bank-name {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.tagline{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* General Navigation Bar Styles */
@@ -11,7 +25,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #4CAF50;
+    background-color:#192677;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -104,7 +118,7 @@ body {
 }
 
 .form-content {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 2rem;
     border-radius: 10px;
     width: 400px;
@@ -140,7 +154,7 @@ input {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #2b4d75;
     color: white;
     border: none;
     border-radius: 5px;
@@ -150,7 +164,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #0c1c35;
 }
 
 

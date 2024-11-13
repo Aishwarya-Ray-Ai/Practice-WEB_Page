@@ -17,18 +17,45 @@ document.querySelector('.close-btn').onclick = function() {
 //     }
 // };
 
-
-
-
 // Function to open the form modal
-function openForm(formId) {
-    document.getElementById(formId).style.display = 'flex';
+function openForm() {
+    document.getElementById("form-modal").style.display = "flex";
 }
 
 // Function to close the form modal
-function closeForm(formId) {
-    document.getElementById(formId).style.display = 'none';
+function closeForm() {
+    document.getElementById("form-modal").style.display = "none";
 }
+
+// Function to reset the form fields
+function resetForm() {
+    document.querySelector("#login-form").reset();
+    document.querySelector("#register-form").reset();
+}
+
+// Function to show the register form and hide the login form
+function showRegisterForm() {
+    document.getElementById("login-section").style.display = "none";
+    document.getElementById("register-section").style.display = "block";
+}
+
+// Function to show the login form and hide the register form
+function showLoginForm() {
+    document.getElementById("register-section").style.display = "none";
+    document.getElementById("login-section").style.display = "block";
+}
+
+
+
+// // Function to open the form modal
+// function openForm(formId) {
+//     document.getElementById(formId).style.display = 'flex';
+// }
+
+// // Function to close the form modal
+// function closeForm(formId) {
+//     document.getElementById(formId).style.display = 'none';
+// }
 
 // Close the modal when clicking outside the form content
 window.onclick = function(event) {
