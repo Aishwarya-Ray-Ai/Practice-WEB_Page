@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Website</title>
+    <link rel="stylesheet" href="trasaction.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Vivid Bank</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <!-- <li><a href="#">About</a></li> -->
+            <li><a href="customer.html">Customer</a></li>
+            <li><a href="Admin.html">Admin</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
+        </ul>
+    </nav>
+
+    <main>
+        <div class="main-card" >
+            <div class="main-card-content">
+                <h1 class="bank-name">Make a Trasaction</h1>
+                <!-- <h2 class="tagline"> Clear , Colourful and dependable </h2> -->
+        </div>
+        </div>
+    </main>
+
+    <div class="content-container">
+        <div class="text-container">
+    <h2 style="font-size: 60px; margin-top: 80px;margin-left: 60px;color:linear-gradient(135deg, #9bbdf1, #98cbe0, #bfbdfb);font-family: Garamond, serif;">Swift, Secure, Seamless Transfers—Anywhere, Anytime.</h2>
+    </div>
+    <div class="image-container">
+        <img src="https://cdni.iconscout.com/illustration/premium/thumb/transfer-money-via-mobile-app-illustration-download-in-svg-png-gif-file-formats--online-banking-electronic-funds-eft-bank-transaction-pack-business-illustrations-9803923.png?f=webp">
+    </div>
+    </div>
+
+    <div class="button-container">
+        <button class="big-button" onclick="openForm()">TRANSFER NOW</button>
+    </div>
+
+    <!-- Create Account Form -->
+    <div class="form-modal" id="createAccountForm">
+        <div class="form-content">
+            <span class="close-btn" onclick="closeForm()">&times;</span>
+            <h2>Make a Transaction</h2>
+            <form>
+                <label for="trasactionid">Sender AccountID <span class="required">*</span></label>
+                <input type="text" id="TrasactionID" placeholder="Enter your customerID" required>
+
+                <label for="email">Receiver AccountID <span class="required">*</span></label>
+                <input type="text" id="AccountID"  placeholder="Enter your AccountID" required>
+
+                <label for="password">Amount <span class="required">*</span></label>
+                <input type="text" id="Amount" placeholder="Enter the amount you want to transfer" required>
+
+                <label for="TransactionType">TransactionType <span class="required">*</span></label>
+                <input type="text" id="TransactionType" placeholder="Enter the trasaction type" required>
+
+                <button type="submit">Transfer</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <h2 style="margin-left: 70px;">Still having any problem ?</h2>
+    <h3 style="margin-left: 100px;">Drop a message here , We will reach out to you soon &#10084;</h3>
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-12">
+                    <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="contactform">
+                        <h3 class="register-heading">Contact Us</h3>
+                        <div class="row register-form">
+                            <div class="col-md-12">
+                                <form method="post" autocomplete="off" name="google-sheet">
+                                    <div class="form-group">
+                                        <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="Message" class="form-control" placeholder="Type any message here *" value="" required=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+ 
+    
+    <footer>
+        <div class="footer-column footer-column-1">   
+        </div>
+
+        <div class="footer-column footer-column-2">
+            <a href="#">Tools</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+        </div>
+
+        
+
+        <p>© 2024 Vivid Bank</p>
+    </footer>
+
+    <script src="trasaction.js"></script>
+</body>
+</html>
+
