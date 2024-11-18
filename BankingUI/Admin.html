@@ -3,30 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Banking Options</title>
+    <title>Banking Website</title>
     <link rel="stylesheet" href="Admin.css">
 </head>
 <body>
     <!-- Sticky Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">Banking Website</div>
+        <div class="logo">Vivid Bank</div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Logout</a></li>
+            <!-- <li><a href="#">About</a></li> -->
+            <li><a href="customer.html">Customer</a></li>
+            <li><a href="Admin.html">Admin</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
         </ul>
     </nav>
 
-    <div class="options-container">
-        <h1>Customer Banking Options</h1>
-        <ul class="options-list">
-            <li><a href="transfer-money.html">Transfer Money</a></li>
-            <li><a href="create-account.html">Create an Account</a></li>
-            <li><a href="apply-loan.html">Apply for Loan</a></li>
-            <li><a href="withdraw-money.html">Withdraw Money</a></li>
-            <li><a href="check-balance.html">Check Bank Balance</a></li>
-        </ul>
+    <div class="admin-container">
+        <h1>Admin Dashboard</h1>
+        <div class="date-time">
+            <!-- <p id="currentDateTime"></p> -->
+        </div>
+
+        <div class="admin-options">
+             <!-- Account Management Section -->
+             <div class="admin-card">
+                <h2>Account Management</h2>
+                <p>Account Created On:</p>
+                <p id="accountDate"></p> <!-- Automatically fetched date -->
+            </div>
+            <!-- Customer Details Section -->
+            <div class="admin-card">
+                <h2>Customer Details</h2>
+                <button class="view-button" onclick="toggleCustomerDetails()">View Customer Details</button>
+                <div class="details-container">
+                    <!-- Customer Details Table -->
+                    <div id="customerDetails">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Customer Name</th>
+                                    <th>Account Number</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>123456789</td>
+                                    <td>john@example.com</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <button onclick="showAccountDetails()">View Account Details</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+                    <!-- Account Details Table -->
+                    <div id="accountDetails" style="display: none;">
+                        <button style="align-items: flex-end;" class="close-btn" onclick="closeAccountDetails()">Close</button>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Account Type</th>
+                                    <th>Balance</th>
+                                    <th>Date Created</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Savings</td>
+                                    <td>$5,000</td>
+                                    <td>2024-01-15</td>
+                                    <td>
+                                        <button onclick="showTransactionDetails()">Transaction Details</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+                    <!-- Transaction Details Table -->
+                    <div id="transactionDetails" style="display: none;">
+                        <button class="close-btn" onclick="closeTransactionDetails()">Close</button>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sender Account Details</th>
+                                    <th>Receiver Account Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>123456789 - John Doe - $500</td>
+                                    <td>987654321 - Jane Smith - $500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                </div>
+
+            <div class="admin-card">
+                <h2>Loan Applications</h2>
+                <button onclick="toggleLoanApplications()">View Applications</button>
+                <div id="loan-applications" class="hidden">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Applicant Name</th>
+                                <th>Loan Amount</th>
+                                <th>Application Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>$10,000</td>
+                                <td>2024-01-15</td>
+                                <td><button onclick="approveLoan('John Doe')">Approve</button>
+                                    <button onclick="approveLoan('John Doe')">Decline</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jane Smith</td>
+                                <td>$5,000</td>
+                                <td>2024-01-10</td>
+                                <td><button onclick="approveLoan('Jane Smith')">Approve</button></td>
+                            </tr>
+                            <tr>
+                                <td>Alex Brown</td>
+                                <td>$8,000</td>
+                                <td>2024-01-05</td>
+                                <td><button onclick="approveloan('Alex Brown')">Approve</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
     </div>
+
+    <script src="Admin.js"></script>
 </body>
 </html>
