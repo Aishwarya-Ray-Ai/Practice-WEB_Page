@@ -142,6 +142,44 @@ body {
     border-radius: 0px;
 }
 
+.content-container2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    height: auto;
+    margin: 5px ;
+    padding: 20px;
+    border-radius: 0px;
+    
+}
+
+.text-container2 {
+    flex: 1;
+    margin-left: 200px;
+}
+
+.text-container2 h2,
+.text-container2 h3,
+.text-container2 p {
+    margin: 0 0 20px;
+}
+
+.image-container2 {
+    flex: 1;
+    display: flex;
+    margin-right: 100px;
+   justify-content: flex-start;
+   
+}
+
+
+.image-container2 img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 0px;
+}
+
+
 .button-container {
     text-align: center;
 }
