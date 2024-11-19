@@ -11,12 +11,13 @@ function setAccountCreationDate() {
     document.getElementById('accountDate').innerText = creationDate.toLocaleDateString();
 }
 
-// Toggle visibility of customer details
+// Function to toggle visibility of the customer details table
 function toggleCustomerDetails() {
     const customerDetails = document.getElementById('customerDetails');
-    customerDetails.classList.toggle('hidden');
+    customerDetails.style.display = customerDetails.style.display === 'none' ? 'block' : 'none';
 }
 
+//account details
 function showAccountDetails() {
     // Hide the customer details table and show the account details table
     document.getElementById('customerDetails').style.display = 'none';
@@ -28,7 +29,7 @@ function closeAccountDetails() {
     document.getElementById('accountDetails').style.display = 'none';
     document.getElementById('customerDetails').style.display = 'block';
 }
-
+//trasaction details
 function showTransactionDetails() {
     // Hide the account details table and show the transaction details table
     document.getElementById('accountDetails').style.display = 'none';
@@ -39,21 +40,6 @@ function closeTransactionDetails() {
     // Hide the transaction details table and revert back to the account details table
     document.getElementById('transactionDetails').style.display = 'none';
     document.getElementById('accountDetails').style.display = 'block';
-}
-
-
-// // account details
-// function showAccountDetails() {
-//     document.querySelector('.account-details-container').style.display = 'block';
-// }
-// // trasaction history
-// function showTransactionDetails() {
-//     document.querySelector('.transaction-details-container').style.display = 'block';
-// }
-
-// Deactivate customer account function
-function deactivateCustomer(customerName) {
-    alert(`Customer account for ${customerName} deactivated.`);
 }
 
 // Toggle visibility of loan applications
